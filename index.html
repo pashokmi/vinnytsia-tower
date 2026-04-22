@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Вінницька водонапірна вежа — пам'ятка архітектури, символ міста. Історія, архітектор Григорій Артинов, відвідування."
+    />
+    <title>Водонапірна вежа Вінниці</title>
+    <link rel="stylesheet" href="css/tower.css" />
+  </head>
+  <body class="tower-page">
+    <a class="tower-skip" href="#main">До основного вмісту</a>
+
+    <header class="tower-header">
+      <div class="tower-header__inner">
+        <div class="tower-header__brand">
+          Водонапірна вежа
+          <span>Вінниця · з 1912</span>
+        </div>
+        <nav class="tower-nav" aria-label="Головна навігація">
+          <button
+            class="tower-nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="tower-nav-menu"
+            aria-label="Відкрити або закрити меню"
+          >
+            <span class="tower-nav__toggle-bar"></span>
+            <span class="tower-nav__toggle-bar"></span>
+            <span class="tower-nav__toggle-bar"></span>
+          </button>
+          <ul class="tower-nav__list" id="tower-nav-menu">
+            <li><a class="tower-nav__link" href="#analiz">Аналіз</a></li>
+            <li><a class="tower-nav__link" href="#obiekt">Об'єкт</a></li>
+            <li><a class="tower-nav__link" href="#arhitektura">Архітектура</a></li>
+            <li><a class="tower-nav__link" href="#artynov">Артинов</a></li>
+            <li><a class="tower-nav__link" href="#vodohin">Водогін</a></li>
+            <li><a class="tower-nav__link" href="#hronolohia">Хронологія</a></li>
+            <li><a class="tower-nav__link" href="#viina">Друга світова</a></li>
+            <li><a class="tower-nav__link" href="#suchasnist">Сьогодні</a></li>
+            <li><a class="tower-nav__link" href="#fakty">Факти</a></li>
+            <li><a class="tower-nav__link" href="#vidviduvannia">Відвідини</a></li>
+            <li><a class="tower-nav__link" href="#dzherela">Джерела</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="tower-hero" id="hero" aria-labelledby="tower-hero-title">
+      <div class="tower-hero__bg" role="presentation"></div>
+      <div class="tower-hero__veil" role="presentation"></div>
+      <div class="tower-hero__grid" role="presentation"></div>
+      <div class="tower-hero__content">
+        <p class="tower-hero__eyebrow">Європейська площа</p>
+        <h1 class="tower-hero__title" id="tower-hero-title">28 метрів історії над Бугом</h1>
+        <p class="tower-hero__lead">
+          Водонапірна вежа Григорія Артинова — інженерна та архітектурна пам'ятка початку XX століття й один із головних
+          символів Вінниці.
+        </p>
+        <div class="tower-hero__actions">
+          <a class="tower-btn tower-btn--primary" href="#vidviduvannia">План відвідування</a>
+          <a class="tower-btn tower-btn--ghost" href="#hronolohia">Хронологія</a>
+        </div>
+      </div>
+      <div class="tower-hero__scroll" aria-hidden="true"></div>
+    </section>
+
+    <main class="tower-main" id="main">
+      <section class="tower-section tower-section--alt" id="analiz" aria-labelledby="tower-analiz-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Перед макетом</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-analiz-title">
+            Що враховано з аналізу подібних сайтів
+          </h2>
+          <p class="tower-section__intro">
+            Орієнтир — публічні кейси культурних інституцій і нагороджені проєкти (зокрема музейні портали на кшталт
+            <a href="https://www.bazooka.se/case/nordiska-museet/">Nordiska museet</a> та презентації на
+            <a href="https://www.awwwards.com/sites/de-gaspe-beaubien-museum">Awwwards</a>): спокійна подача, великі
+            зображення, читабельна типографіка, анімації прив'язані до скролу та наведення — без «шуму», який відволікає
+            від фактів.
+          </p>
+        </div>
+        <div class="tower-analysis">
+          <article class="tower-analysis__card tower-reveal tower-reveal--delay-1">
+            <h3>Ієрархія та наратив</h3>
+            <p>
+              Довгі секції з підзаголовками, таймлайн і короткі блоки «ключ — значення», як на сайтах музеїв та міських
+              брендів: відвідувач швидко знаходить дати, адресу й сенс місця.
+            </p>
+          </article>
+          <article class="tower-analysis__card tower-reveal tower-reveal--delay-2">
+            <h3>Контраст і атмосфера</h3>
+            <p>
+              Темна база й теплі акценти (як у преміальних культурних кейсах) підкреслюють матеріал — цегла, граніт,
+              патина часу — і не конкурують з фотографіями вежі.
+            </p>
+          </article>
+          <article class="tower-analysis__card tower-reveal tower-reveal--delay-3">
+            <h3>Рух без нервовості</h3>
+            <p>
+              Плавні появи блоків, легкий «Ken Burns» у hero, мікроанімації навігації та карток: рух підтримує
+              увагу, але вимикається при <code>prefers-reduced-motion</code>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tower-section" id="obiekt" aria-labelledby="tower-obiekt-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Ідентифікація</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-obiekt-title">Об'єкт</h2>
+          <p class="tower-section__intro">
+            Офіційна назва — водонапірна вежа (Вінниця). Пам'ятка архітектури місцевого значення з 1983 року, з 2000-го —
+            у переліку міської символіки. З 2022 року на балансі Музею Вінниці.
+          </p>
+        </div>
+        <div class="tower-stats tower-reveal">
+          <div class="tower-stats__item">
+            <div class="tower-stats__value">1911–1912</div>
+            <div class="tower-stats__label">Зведення та запуск</div>
+          </div>
+          <div class="tower-stats__item">
+            <div class="tower-stats__value">28 м</div>
+            <div class="tower-stats__label">Висота башти</div>
+          </div>
+          <div class="tower-stats__item">
+            <div class="tower-stats__value">8</div>
+            <div class="tower-stats__label">Ярусів (за однією з оцінок)</div>
+          </div>
+          <div class="tower-stats__item">
+            <div class="tower-stats__value">∞</div>
+            <div class="tower-stats__label">План нагадує «вісімку»</div>
+          </div>
+        </div>
+        <div class="tower-split tower-split--spaced-top">
+          <div class="tower-prose tower-reveal">
+            <p>
+              <strong>Адреса:</strong> вул. Миколи Оводова, 20. <strong>Локація:</strong> північно-східний кут Європейської
+              площі, поруч із Вічним вогнем, пам'ятником Артинову та обласним краєзнавчим музеєм.
+            </p>
+            <p>
+              Автор проєкту — <strong>Григорій Григорович Артинов</strong>, перший головний архітектор Вінниці
+              (1900–1919).
+            </p>
+          </div>
+          <div class="tower-prose tower-reveal tower-reveal--delay-1">
+            <p>
+              Форма восьмикутна: у плані перетинаються два кола, що нагадує символ нескінченності. Фундамент і перший
+              поверх — граніт; вище — червона цегла, пілястри, лжеарки, вузькі вікна-бійниці, купол із башточкою.
+            </p>
+            <p>За задумом, силует мав асоціюватися з міською ратушею й європейською традицією площі.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tower-section tower-section--alt" id="arhitektura" aria-labelledby="tower-arhitektura-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Конструкція</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-arhitektura-title">Архітектура та техніка</h2>
+        </div>
+        <div class="tower-split">
+          <div class="tower-prose tower-reveal">
+            <p>Оригінально на даху був майданчик пожежного спостереження, піч для підігріву води взимку та швейцарський годинник на чотири циферблати (3000 руб.).</p>
+            <p>Перший водогін: мережа ~1,3 км, продуктивність 600 м³/добу, вода з Південного Бугу після фільтрації; три водорозбірні будки та окремі підключення для заможних родин. Першим споживачем стала жіноча гімназія на Соборній, 94.</p>
+          </div>
+          <div class="tower-prose tower-reveal tower-reveal--delay-1">
+            <p>Під час реконструкції 1978–1985 (арх. Є. Пантелеймонов, В. Спусканюк) вежу пристосували під музей: годинник перенесли на шостий ярус, механізм виготовили у Львові, циферблати спершу були бордові.</p>
+            <p>Звукову систему інженер Борис Бронштейн зібрав «кустарно»: молоток б'є у пружину від вагона, сигнал підсилюють гучномовці. Щоранку о 9:00 лунає «Il Silenzio» — з дня повномасштабного вторгнення 2022 року.</p>
+          </div>
+        </div>
+        <div class="tower-gallery">
+          <figure class="tower-gallery__figure tower-reveal">
+            <img
+              src="public/images/vinnytsia-tower/exterior-modern-1600.jpg"
+              alt="Сучасний вигляд вінницької водонапірної вежі"
+              width="800"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Сучасний силует на Європейській</figcaption>
+          </figure>
+          <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-1">
+            <img
+              src="public/images/vinnytsia-tower/exterior-dobudova-1600.jpg"
+              alt="Вежа після добудови та реставраційних робіт"
+              width="800"
+              height="726"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Добудова та реставраційний рельєф фасаду</figcaption>
+          </figure>
+          <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-2">
+            <img
+              src="public/images/vinnytsia-tower/exterior-krajevyd.jpg"
+              alt="Краєвид на вежу з висоти"
+              width="1080"
+              height="1080"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Краєвид з площі</figcaption>
+          </figure>
+          <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-3">
+            <img
+              src="public/images/vinnytsia-tower/vezha-1970.jpg"
+              alt="Архівне фото вежі 1970-х років"
+              width="1200"
+              height="1750"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Архів: 1970-ті</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="tower-section" id="artynov" aria-labelledby="tower-artynov-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Архітектор</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-artynov-title">Григорій Артинов</h2>
+          <p class="tower-section__intro">
+            1860, Ніжин — 9 (22) грудня 1919, Вінниця. Освіта: Санкт-Петербурзьке училище цивільних інженерів. Цивільний
+            інженер, генерал-лейтенант будівельної комісії на службі військового відомства.
+          </p>
+        </div>
+        <div class="tower-prose tower-reveal">
+          <p>Збережені споруди у Вінниці (крім вежі): готель «Савой» (нині «Україна»), міський театр, жіноча гімназія, бібліотека ім. Гоголя, будинок міської Думи, Свято-Воскресенська церква, колишня синагога (ДЮСШ).</p>
+          <p>Пам'ять: вулиця Архітектора Артинова, меморіальна дошка (оновлена 2010), скульптура на Європейській (В. Цісарик).</p>
+        </div>
+      </section>
+
+      <section class="tower-section tower-section--alt" id="vodohin" aria-labelledby="tower-vodohin-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Передісторія</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-vodohin-title">Будівництво водогону</h2>
+        </div>
+        <div class="tower-prose tower-reveal">
+          <ul>
+            <li><strong>Березень 1902</strong> — міська управа розглядає ідею водогону.</li>
+            <li><strong>14 лютого 1904</strong> — Артинов подає проєкт із кошторисом 30 036 крб. 58 коп.; Дума затверджує значно більшу суму.</li>
+            <li><strong>1 грудня 1910</strong> — договір з купцем М. Ремером та вінницькими Х. Зіскіндом і М. Неєром.</li>
+            <li><strong>Липень 1911</strong> — завершено цегляні стіни; <strong>1912</strong> — запуск (затримка через швейцарський годинник).</li>
+          </ul>
+          <p>«Гра дев'яток»: збудовано за дев'ять місяців, як водонапірна — працювала дев'ять років.</p>
+        </div>
+      </section>
+
+      <section class="tower-section" id="hronolohia" aria-labelledby="tower-hronolohia-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Функції</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-hronolohia-title">Хронологія</h2>
+        </div>
+        <div class="tower-timeline tower-reveal">
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">1911–1920-ті</div>
+            <p class="tower-timeline__text">Будівництво, водонапірна функція, пожежна каланча, міський годинник.</p>
+          </div>
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">1941–1944</div>
+            <p class="tower-timeline__text">Спостережний пункт окупантів; пошкодження під час боїв.</p>
+          </div>
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">Після 1944 — 1977</div>
+            <p class="tower-timeline__text">Комунальні квартири Водоканалу, згодом житловий будинок; частково пожежна каланча до 1957.</p>
+          </div>
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">1978–1992</div>
+            <p class="tower-timeline__text">Реконструкція під музей; з 1983 — облік як пам'ятка; музей меморіалу бойової слави.</p>
+          </div>
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">1993–2022</div>
+            <p class="tower-timeline__text">Музей пам'яті воїнів Вінниччини, загиблих в Афганістані; закрито 24.02.2022.</p>
+          </div>
+          <div class="tower-timeline__item">
+            <div class="tower-timeline__years">2024</div>
+            <p class="tower-timeline__text">25 вересня — повне відкриття для відвідувачів, включно з оглядовим майданчиком.</p>
+          </div>
+        </div>
+        <div class="tower-gallery tower-gallery--spaced-top">
+          <figure class="tower-gallery__figure tower-reveal">
+            <img
+              src="public/images/vinnytsia-tower/vezha-hodynnyk.jpg"
+              alt="Годинниковий механізм на вежі"
+              width="1536"
+              height="2048"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Годинник після перенесення</figcaption>
+          </figure>
+          <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-1">
+            <img
+              src="public/images/vinnytsia-tower/vezha-zvukovyi.jpg"
+              alt="Фрагмент звукової системи годинника"
+              width="464"
+              height="474"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Звукова система механізму</figcaption>
+          </figure>
+          <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-2">
+            <img
+              src="public/images/vinnytsia-tower/museum-afghanistan-era-2014.jpg"
+              alt="Інтер'єр музею епохи експозиції про Афганістан"
+              width="300"
+              height="440"
+              loading="lazy"
+            />
+            <figcaption class="tower-gallery__caption">Музейний період (2014)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="tower-section tower-section--alt" id="viina" aria-labelledby="tower-viina-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Друга світова війна</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-viina-title">Вежа у війні</h2>
+        </div>
+        <div class="tower-prose tower-reveal">
+          <p>
+            19–20 липня 1941 року під час захоплення міста пошкоджено оглядовий майданчик, розбито скляні циферблати,
+            вибито шибки.
+          </p>
+          <p>
+            19 березня 1944 року під час визволення радянська артилерія обстрілювала середмістя, намагаючись вибити
+            німецького коригувальника з вежі — <strong>сліди влучань видно на 5–6 поверхах</strong> біля головного
+            циферблата.
+          </p>
+        </div>
+      </section>
+
+      <section class="tower-section" id="suchasnist" aria-labelledby="tower-suchasnist-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">2024–2025</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-suchasnist-title">Сучасний стан</h2>
+        </div>
+        <div class="tower-prose tower-reveal">
+          <p>
+            На балансі Музею Вінниці: експозиції на першому поверсі, фотовиставка «Із висот століть», нічне підсвічування,
+            скульптури поруч. За опитуванням 2021 року вежу назвали головним символом міста.
+          </p>
+          <p>У 1970-х планували знесення за радянською постановою про «соціалістичний образ міста» — вежу врятували громадські зусилля краєзнавців і митців.</p>
+        </div>
+      </section>
+
+      <section class="tower-section tower-section--alt" id="fakty" aria-labelledby="tower-fakty-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Для екскурсії</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-fakty-title">Цікаві факти</h2>
+        </div>
+        <div class="tower-facts tower-reveal">
+          <div class="tower-facts__item">
+            <h3 class="tower-facts__title">Швейцарський механізм</h3>
+            <p class="tower-facts__text">Введення в експлуатацію відклали, доки привезли годинник «з добрим ходом».</p>
+          </div>
+          <div class="tower-facts__item">
+            <h3 class="tower-facts__title">Срібний хрест</h3>
+            <p class="tower-facts__text">З одного боку фасаду — традиційний знак «захисту» споруди.</p>
+          </div>
+          <div class="tower-facts__item">
+            <h3 class="tower-facts__title">Сувенірна географія</h3>
+            <p class="tower-facts__text">Дерев'яні пазли-макети вежі замовляли навіть до Ізраїлю та країн Африки.</p>
+          </div>
+          <div class="tower-facts__item">
+            <h3 class="tower-facts__title">Архівний борг</h3>
+            <p class="tower-facts__text">За документами 1917 року місто так і не розрахувалось з Артиновим за водогін і каналізацію.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tower-section" id="vidviduvannia" aria-labelledby="tower-vidviduvannia-title">
+        <div class="tower-section__head tower-reveal">
+          <p class="tower-section__label">Відвідувачам</p>
+          <h2 class="tower-section__title tower-section__title--observe" id="tower-vidviduvannia-title">Відвідування</h2>
+        </div>
+        <div class="tower-visit tower-reveal">
+          <div>
+            <h3 class="tower-visit__title">Режим (за даними бази знань)</h3>
+            <p class="tower-visit__meta">Щодня, крім понеділка: 10:00–18:00. Уточнюйте актуальний розклад на сайті Музею Вінниці перед поїздкою.</p>
+          </div>
+          <a class="tower-btn tower-btn--primary" href="https://uk.wikipedia.org/wiki/Водонапірна_вежа_(Вінниця)">Стаття у Вікіпедії</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="tower-footer" id="dzherela">
+      <div class="tower-footer__inner tower-reveal">
+        <div class="tower-footer__sources">
+          <strong>Джерела та подальше читання</strong>
+          <ul>
+            <li>
+              <a href="https://uk.wikipedia.org/wiki/Водонапірна_вежа_(Вінниця)">Водонапірна вежа (Вінниця)</a> — Вікіпедія
+            </li>
+            <li>
+              <a href="https://uk.wikipedia.org/wiki/Артинов_Григорій_Григорович">Артинов Григорій Григорович</a> — Вікіпедія
+            </li>
+            <li>Vinnitsa.info, 20minut.ua, Vezha.ua, матеріали Вінницької ОУНБ (згадані у внутрішній базі знань).</li>
+          </ul>
+        </div>
+        <p class="tower-footer__note">
+          Фотографії на сторінці походять зі статті української Вікіпедії / Wikimedia Commons; перед комерційним
+          використанням перевірте ліцензію кожного файлу на Commons і вкажіть авторство.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/tower.js" defer></script>
+  </body>
+</html>
