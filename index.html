@@ -32,7 +32,6 @@
             <span class="tower-nav__toggle-bar"></span>
           </button>
           <ul class="tower-nav__list" id="tower-nav-menu">
-            <li><a class="tower-nav__link" href="#analiz">Аналіз</a></li>
             <li><a class="tower-nav__link" href="#obiekt">Об'єкт</a></li>
             <li><a class="tower-nav__link" href="#arhitektura">Архітектура</a></li>
             <li><a class="tower-nav__link" href="#artynov">Артинов</a></li>
@@ -68,45 +67,6 @@
     </section>
 
     <main class="tower-main" id="main">
-      <section class="tower-section tower-section--alt" id="analiz" aria-labelledby="tower-analiz-title">
-        <div class="tower-section__head tower-reveal">
-          <p class="tower-section__label">Перед макетом</p>
-          <h2 class="tower-section__title tower-section__title--observe" id="tower-analiz-title">
-            Що враховано з аналізу подібних сайтів
-          </h2>
-          <p class="tower-section__intro">
-            Орієнтир — публічні кейси культурних інституцій і нагороджені проєкти (зокрема музейні портали на кшталт
-            <a href="https://www.bazooka.se/case/nordiska-museet/">Nordiska museet</a> та презентації на
-            <a href="https://www.awwwards.com/sites/de-gaspe-beaubien-museum">Awwwards</a>): спокійна подача, великі
-            зображення, читабельна типографіка, анімації прив'язані до скролу та наведення — без «шуму», який відволікає
-            від фактів.
-          </p>
-        </div>
-        <div class="tower-analysis">
-          <article class="tower-analysis__card tower-reveal tower-reveal--delay-1">
-            <h3>Ієрархія та наратив</h3>
-            <p>
-              Довгі секції з підзаголовками, таймлайн і короткі блоки «ключ — значення», як на сайтах музеїв та міських
-              брендів: відвідувач швидко знаходить дати, адресу й сенс місця.
-            </p>
-          </article>
-          <article class="tower-analysis__card tower-reveal tower-reveal--delay-2">
-            <h3>Контраст і атмосфера</h3>
-            <p>
-              Темна база й теплі акценти (як у преміальних культурних кейсах) підкреслюють матеріал — цегла, граніт,
-              патина часу — і не конкурують з фотографіями вежі.
-            </p>
-          </article>
-          <article class="tower-analysis__card tower-reveal tower-reveal--delay-3">
-            <h3>Рух без нервовості</h3>
-            <p>
-              Плавні появи блоків, легкий «Ken Burns» у hero, мікроанімації навігації та карток: рух підтримує
-              увагу, але вимикається при <code>prefers-reduced-motion</code>.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section class="tower-section" id="obiekt" aria-labelledby="tower-obiekt-title">
         <div class="tower-section__head tower-reveal">
           <p class="tower-section__label">Ідентифікація</p>
@@ -172,44 +132,104 @@
         </div>
         <div class="tower-gallery">
           <figure class="tower-gallery__figure tower-reveal">
-            <img
-              src="public/images/vinnytsia-tower/exterior-modern-1600.jpg"
-              alt="Сучасний вигляд вінницької водонапірної вежі"
-              width="800"
-              height="1200"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Сучасний силует на Європейській</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: сучасний вигляд вінницької водонапірної вежі"
+            >
+              <img
+                src="public/images/vinnytsia-tower/exterior-modern-1600.webp"
+                alt="Сучасний вигляд вінницької водонапірної вежі"
+                width="800"
+                height="1200"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Сучасний силует на Європейській</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:SnizhokAM" rel="noopener noreferrer">SnizhokAM</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
           <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-1">
-            <img
-              src="public/images/vinnytsia-tower/exterior-dobudova-1600.jpg"
-              alt="Вежа після добудови та реставраційних робіт"
-              width="800"
-              height="726"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Добудова та реставраційний рельєф фасаду</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: вежа після добудови та реставраційних робіт"
+            >
+              <img
+                src="public/images/vinnytsia-tower/exterior-dobudova-1600.webp"
+                alt="Вежа після добудови та реставраційних робіт"
+                width="800"
+                height="726"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Добудова та реставраційний рельєф фасаду</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
           <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-2">
-            <img
-              src="public/images/vinnytsia-tower/exterior-krajevyd.jpg"
-              alt="Краєвид на вежу з висоти"
-              width="1080"
-              height="1080"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Краєвид з площі</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: краєвид на вежу з висоти"
+            >
+              <img
+                src="public/images/vinnytsia-tower/exterior-krajevyd.webp"
+                alt="Краєвид на вежу з висоти"
+                width="1080"
+                height="1080"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Краєвид з площі</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
           <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-3">
-            <img
-              src="public/images/vinnytsia-tower/vezha-1970.jpg"
-              alt="Архівне фото вежі 1970-х років"
-              width="1200"
-              height="1750"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Архів: 1970-ті</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: архівне фото вежі 1970-х років"
+            >
+              <img
+                src="public/images/vinnytsia-tower/vezha-1970.webp"
+                alt="Архівне фото вежі 1970-х років"
+                width="1200"
+                height="1750"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Архів: 1970-ті</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
         </div>
       </section>
@@ -278,34 +298,79 @@
         </div>
         <div class="tower-gallery tower-gallery--spaced-top">
           <figure class="tower-gallery__figure tower-reveal">
-            <img
-              src="public/images/vinnytsia-tower/vezha-hodynnyk.jpg"
-              alt="Годинниковий механізм на вежі"
-              width="1536"
-              height="2048"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Годинник після перенесення</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: годинниковий механізм на вежі"
+            >
+              <img
+                src="public/images/vinnytsia-tower/vezha-hodynnyk.webp"
+                alt="Годинниковий механізм на вежі"
+                width="1536"
+                height="2048"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Годинник після перенесення</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
           <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-1">
-            <img
-              src="public/images/vinnytsia-tower/vezha-zvukovyi.jpg"
-              alt="Фрагмент звукової системи годинника"
-              width="464"
-              height="474"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Звукова система механізму</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: фрагмент звукової системи годинника"
+            >
+              <img
+                src="public/images/vinnytsia-tower/vezha-zvukovyi.webp"
+                alt="Фрагмент звукової системи годинника"
+                width="464"
+                height="474"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Звукова система механізму</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
           <figure class="tower-gallery__figure tower-reveal tower-reveal--delay-2">
-            <img
-              src="public/images/vinnytsia-tower/museum-afghanistan-era-2014.jpg"
-              alt="Інтер'єр музею епохи експозиції про Афганістан"
-              width="300"
-              height="440"
-              loading="lazy"
-            />
-            <figcaption class="tower-gallery__caption">Музейний період (2014)</figcaption>
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: інтер'єр музею епохи експозиції про Афганістан"
+            >
+              <img
+                src="public/images/vinnytsia-tower/museum-afghanistan-era-2014.webp"
+                alt="Інтер'єр музею епохи експозиції про Афганістан"
+                width="300"
+                height="440"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Музейний період (2014)</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
           </figure>
         </div>
       </section>
@@ -325,6 +390,33 @@
             німецького коригувальника з вежі — <strong>сліди влучань видно на 5–6 поверхах</strong> біля головного
             циферблата.
           </p>
+        </div>
+        <div class="tower-gallery tower-gallery--spaced-top">
+          <figure class="tower-gallery__figure tower-reveal">
+            <button
+              type="button"
+              class="tower-gallery__trigger"
+              aria-label="Відкрити: радянський прапор над вежею, 20 березня 1944 року"
+            >
+              <img
+                src="public/images/vinnytsia-tower/vezha-1944.webp"
+                alt="Архівне фото: радянський прапор над вежею, 20 березня 1944 року"
+                width="1137"
+                height="884"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="tower-gallery__caption">
+              <span class="tower-gallery__caption-title">Радянський прапор над вежею, 20 березня 1944</span>
+              <span class="tower-gallery__credit"
+                >©
+                <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a> /
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+                  >CC BY-SA 4.0</a
+                ></span
+              >
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -396,12 +488,126 @@
             <li>Vinnitsa.info, 20minut.ua, Vezha.ua, матеріали Вінницької ОУНБ (згадані у внутрішній базі знань).</li>
           </ul>
         </div>
-        <p class="tower-footer__note">
-          Фотографії на сторінці походять зі статті української Вікіпедії / Wikimedia Commons; перед комерційним
-          використанням перевірте ліцензію кожного файлу на Commons і вкажіть авторство.
-        </p>
+        <div class="tower-footer__credits">
+          <strong>Фотографії та авторство (Wikimedia Commons)</strong>
+          <p>
+            Усі зображення на сайті — з
+            <a href="https://uk.wikipedia.org/wiki/Водонапірна_вежа_(Вінниця)">статті української Вікіпедії</a>, ліцензія
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.uk" rel="license noopener noreferrer"
+              >Creative Commons Attribution-ShareAlike 4.0</a
+            >. Копії на сайті масштабовано для вебу; оригінали — за посиланнями нижче.
+          </p>
+          <ul class="tower-credits">
+            <li class="tower-credits__item">
+              <a
+                href="https://commons.wikimedia.org/wiki/File:%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F_%D0%92%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D0%BF%D1%96%D1%80%D0%BD%D0%B0_%D0%B2%D0%B5%D0%B6%D0%B0_4.jpg"
+                rel="noopener noreferrer"
+                >Вінниця Водонапірна вежа 4.jpg</a
+              >
+              — фон hero та галерея «Архітектура». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:SnizhokAM" rel="noopener noreferrer">SnizhokAM</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Dobudova_vezhi.jpg" rel="noopener noreferrer"
+                >Dobudova vezhi.jpg</a
+              >
+              — галерея «Архітектура». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Krajevyd_vezha.jpg" rel="noopener noreferrer"
+                >Krajevyd vezha.jpg</a
+              >
+              — галерея «Архітектура». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Vezha_1970.jpg" rel="noopener noreferrer"
+                >Vezha 1970.jpg</a
+              >
+              — галерея «Архітектура». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Vezha_1944.tif" rel="noopener noreferrer"
+                >Vezha 1944.tif</a
+              >
+              — галерея «Друга світова». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Vezha_hodynnyk.jpg" rel="noopener noreferrer"
+                >Vezha hodynnyk.jpg</a
+              >
+              — галерея «Хронологія». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Vezha_zvukovyi.jpg" rel="noopener noreferrer"
+                >Vezha zvukovyi.jpg</a
+              >
+              — галерея «Хронологія». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+            <li class="tower-credits__item">
+              <a href="https://commons.wikimedia.org/wiki/File:Afganistan_2014_06_2.jpg" rel="noopener noreferrer"
+                >Afganistan 2014 06 2.jpg</a
+              >
+              — галерея «Хронологія». Автор:
+              <a href="https://commons.wikimedia.org/wiki/User:Yevhenij91" rel="noopener noreferrer">Yevhenij91</a>.
+              <span class="tower-credits__license">CC BY-SA 4.0</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+
+    <div
+      class="tower-lightbox"
+      id="tower-lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="tower-lightbox-title"
+    >
+      <div class="tower-lightbox__backdrop" data-lightbox-close></div>
+      <div class="tower-lightbox__panel">
+        <button type="button" class="tower-lightbox__close" data-lightbox-close aria-label="Закрити перегляд">
+          <span aria-hidden="true">×</span>
+        </button>
+        <button type="button" class="tower-lightbox__nav tower-lightbox__nav--prev" data-lightbox-prev aria-label="Попереднє фото">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button type="button" class="tower-lightbox__nav tower-lightbox__nav--next" data-lightbox-next aria-label="Наступне фото">
+          <span aria-hidden="true">›</span>
+        </button>
+        <div class="tower-lightbox__stage" id="tower-lightbox-stage">
+          <img class="tower-lightbox__image" id="tower-lightbox-image" alt="" />
+          <div class="tower-lightbox__footer">
+            <p class="tower-lightbox__title" id="tower-lightbox-title"></p>
+            <p class="tower-lightbox__credit" id="tower-lightbox-credit"></p>
+            <div class="tower-lightbox__bar">
+              <span class="tower-lightbox__counter" id="tower-lightbox-counter"></span>
+              <div class="tower-lightbox__zoom" role="group" aria-label="Масштаб зображення">
+                <button type="button" class="tower-lightbox__zoom-btn" data-lightbox-zoom-out aria-label="Зменшити">−</button>
+                <button type="button" class="tower-lightbox__zoom-btn" data-lightbox-zoom-reset aria-label="Скинути масштаб">
+                  100%
+                </button>
+                <button type="button" class="tower-lightbox__zoom-btn" data-lightbox-zoom-in aria-label="Збільшити">+</button>
+              </div>
+            </div>
+            <p class="tower-lightbox__hint">Коліщатко миші — масштаб. Перетягніть зображення при збільшенні. ← → — навігація.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/tower.js" defer></script>
   </body>
