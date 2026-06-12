@@ -1027,8 +1027,8 @@ a:hover {
 .tower-visit {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
+  gap: 28px;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 28px 24px;
   border-radius: var(--tower-radius);
@@ -1037,16 +1037,62 @@ a:hover {
   box-shadow: var(--tower-shadow-soft);
 }
 
+.tower-visit__body {
+  flex: 1;
+  min-width: min(100%, 420px);
+}
+
+.tower-visit__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 220px;
+}
+
 .tower-visit__title {
   font-family: var(--tower-font-heading);
   font-size: 22px;
-  margin: 0 0 8px;
+  margin: 0 0 12px;
+}
+
+.tower-visit__subtitle {
+  margin: 14px 0 4px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tower-color-accent-light);
+}
+
+.tower-visit__subtitle:first-of-type {
+  margin-top: 0;
 }
 
 .tower-visit__meta {
   margin: 0;
   color: var(--tower-color-text-soft);
   font-size: 15px;
+  line-height: 1.55;
+}
+
+.tower-visit__meta + .tower-visit__subtitle {
+  margin-top: 14px;
+}
+
+.tower-visit__link {
+  color: var(--tower-color-accent-light);
+  text-decoration: none;
+}
+
+.tower-visit__link:hover {
+  color: var(--tower-color-text);
+  text-decoration: underline;
+}
+
+.tower-visit__note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--tower-color-muted);
+  line-height: 1.45;
 }
 
 /* Footer */
